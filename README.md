@@ -13,17 +13,23 @@ This project implements a Snake game AI using a genetic algorithm in Python with
 
 **Customizable Parameters:** Allows easy adjustments to the genetic algorithm parameters, such as population size and mutation rates, for experimentation.
 
-**Installation:** To run this project, you will need Python and Pygame installed on your system. Follow these steps to set up the environment:
+## **Installation** 
 
-**Clone the Repository:**
-bash
-Copy code: git clone https://github.com/jayme2002/SnakeAi.git
+To run this project, you will need Python and Pygame installed on your system. Follow these steps to set up the environment:
 
 **Install Requirements:**
 Ensure Python 3.x is installed.
 
 **Install Pygame:** 
-Copy code pip install pygame
+Copy code: pip install pygame
+
+**Clone the Repository:**
+Copy code: git clone https://github.com/jayme2002/SnakeAi.git
+
+**OR**
+
+**Download snake.py File:**
+navigate to directory where the file is downloaded and run python3 snake.py
 
 **Navigate to the Project Directory:**
 bash
@@ -49,4 +55,4 @@ Selection: Snakes are evaluated based on their performance in the game. The best
 
 ## **Configuration**
 
-You can adjust various settings related to the snake's speed, window size, and genetic algorithm parameters within the snake_ai.py file to see how they influence the AI's performance.
+You can adjust various settings related to the snake's speed, window size, and genetic algorithm parameters within the snake.py file to see how they influence the AI's performance.
