@@ -1,6 +1,6 @@
 
 # **Snake AI Using Genetic Algorithm**
-![Feb-29-2024 13-17-58](https://github.com/Jayme2002/SnakeAi/assets/132419605/0f92dfbb-d0ed-4cb8-8d00-321489d447df)
+
 ![snakegif](https://github.com/Jayme2002/SnakeAi/assets/132419605/6c24dc25-aa61-43ef-9093-77851b6f769b)
 
 ## **Project Overview**
