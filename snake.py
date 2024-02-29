@@ -5,8 +5,8 @@ import time
 
 # Game configuration
 snake_speed = 75
-window_x = 600
-window_y = 400
+window_x = 800
+window_y = 600
 
 # Initialize pygame
 pygame.init()
@@ -76,7 +76,6 @@ def play_game_with_ai(snake_ai):
     fruit_position = [random.randrange(1, (window_x // 10)) * 10, random.randrange(1, (window_y // 10)) * 10]
     fruit_spawn = True
     score = 0
-    collisions_avoided = 0
     start_time = time.time()
     total_time_to_fruit = 0
     moves = 0
@@ -117,18 +116,13 @@ def play_game_with_ai(snake_ai):
             snake_position[1] < 0 or snake_position[1] >= window_y or
             snake_position in snake_body[1:]):
             break
-
-        # Check for potential collision and direction change
         
-
     average_time_to_fruit = total_time_to_fruit / score if score > 0 else float('inf')
     return score, average_time_to_fruit
 
 
 def crossover(parent1, parent2):
-    
     # Implementing a more complex crossover mechanism
-    
     if play_game_with_ai(parent1) < play_game_with_ai(parent2):
         parent1, parent2 = parent2, parent1  # Swap parent1 and parent2
 
@@ -175,9 +169,8 @@ def calculate_fitness(score, avg_time_to_fruit):
     # Adjust these weights as needed
     score_weight = 1.5
     time_weight = 1.2  # Lower value encourages faster fruit consumption
-     # Lower value encourages safe navigation
-
     fitness = (score_weight * score) - (time_weight * avg_time_to_fruit)
+    
     return fitness
 
 def show_message(surface, message, font, size, color, position):
@@ -194,8 +187,6 @@ def play_visual_game_with_best_ai(best_snake):
     
     game_window.fill(black)  # Fill the screen with black
     show_message(game_window, "Press any key to begin", "arial", 24, (255, 255, 255), (window_x / 2, window_y / 2))
-
-
     snake_position = [100, 50]
     snake_body = [[100, 50], [90, 50], [80, 50], [70, 50]]
     fruit_position = [random.randrange(1, (window_x // 10)) * 10, random.randrange(1, (window_y // 10)) * 10]
@@ -246,7 +237,6 @@ def play_visual_game_with_best_ai(best_snake):
             break
 
         # Drawing the game state
-        
         game_window.fill(black)
         for pos in snake_body:
             pygame.draw.rect(game_window, green, pygame.Rect(pos[0], pos[1], 10, 10))
