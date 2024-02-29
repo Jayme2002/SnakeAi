@@ -1,12 +1,11 @@
-# SnakeAi
 
-<p style="font-size:45px;">**Snake AI Using Genetic Algorithm**</p>
+# **Snake AI Using Genetic Algorithm**
 
-<p style="font-size:30px;">**Project Overview**</p>
+## **Project Overview**
 
 This project implements a Snake game AI using a genetic algorithm in Python with Pygame for visualization. The goal is to evolve a neural network that controls the snake, maximizing score by eating food while avoiding walls and itself.
 
-<p style="font-size:30px;">Features</p>
+## **Features**
 
 **Pygame Visualization:** Offers a real-time visual representation of the AI-controlled snake navigating the game environment.
 
@@ -33,12 +32,11 @@ Copy code: cd SnakeAi
 **Run the Game:**
 Copy code: python3 snake.py
 
-
-<p style="font-size:30px;">**How It Works:**</p>
+## **How It Works**
 
 The AI controls the snake using a simple neural network where the weights are evolved using a genetic algorithm. At each step, the snake decides its next move based on its current position relative to the walls, its body, and the food.
 
-<p style="font-size:30px;">**Genetic Algorithm Process:**</p>
+## **Genetic Algorithm Process**
 
 **Initial Population:** Randomly generated snakes with unique neural network weights.
 Selection: Snakes are evaluated based on their performance in the game. The best-performing snakes are selected for reproduction.
@@ -49,12 +47,6 @@ Selection: Snakes are evaluated based on their performance in the game. The best
 
 **Next Generation:** The process repeats over several generations, with each generation theoretically improving upon the last.
 
-<p style="font-size:30px;">**Configuration**</p>
+## **Configuration**
 
 You can adjust various settings related to the snake's speed, window size, and genetic algorithm parameters within the snake_ai.py file to see how they influence the AI's performance.
-
-
-
-
-
-
